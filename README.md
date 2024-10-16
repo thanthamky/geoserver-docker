@@ -7,6 +7,7 @@
 
 ## การติดตั้งระบบ
 
+_หมายเหตุ: คำสั่งด้านล่างเป็นคำสั่งสำหรับระบบปฏิบัติการ Linux และ MacOS หากใช้ Windows ให้เปลี่ยน `$(pwd)` เป็น `%CD%`_
 ```bash
 docker run -d -p 80:8080 \
   --mount src="$(pwd)/datadir",target=/opt/geoserver_data/,type=bind \
@@ -18,6 +19,7 @@ docker run -d -p 80:8080 \
   docker.osgeo.org/geoserver:2.25.3
 
 ```
+
 
 ### ตรวจสอบสถานะเซอร์วิส Geoserver
 
