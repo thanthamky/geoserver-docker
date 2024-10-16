@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenLayers Map</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.min.css">
+    <style>
+        .map { width: 100%; height: 400px; }
+    </style>
+</head>
+<body>
+    <div id="map" class="map"></div>
+    <script src="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.min.js"></script>
+    <script>
+        new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({ source: new ol.source.OSM() }),
+                new ol.layer.Tile({
+                    source: new ol.source.TileWMS({
+                        url: 'http://localhost/geoserver/sao/wms',
+                        params: { 'LAYERS': 'sao:states', 'TILED': true }
+                    })
+                })
+            ],
+            view: new ol.View({ center: [-100, 40], zoom: 2 })
+        });
+    </script>
+</body>
+</html>

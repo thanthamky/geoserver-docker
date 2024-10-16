@@ -1,0 +1,17 @@
+<layer>
+  <name>states</name>
+  <id>LayerInfoImpl--6022a364:192507d6b70:-7ffd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--6022a364:192507d6b70:-7ffc</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--6022a364:192507d6b70:-7ffe</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-10-03 03:58:51.397 UTC</dateCreated>
+  <dateModified>2024-10-16 05:03:07.396 UTC</dateModified>
+</layer>

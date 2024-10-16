@@ -1,0 +1,27 @@
+<authKeyAuthentication>
+  <id>-6022a364:192507d6b70:-7ff3</id>
+  <name>authkey</name>
+  <className>org.geoserver.security.GeoServerAuthenticationKeyFilter</className>
+  <authKeyMapperName>webServiceMapper</authKeyMapperName>
+  <authKeyParamName>authkey</authKeyParamName>
+  <userGroupServiceName>default</userGroupServiceName>
+  <mapperParameters>
+    <entry>
+      <string>webServiceUrl</string>
+      <string>http://host:port/service?authkey={key}</string>
+    </entry>
+    <entry>
+      <string>searchUser</string>
+      <string>^\s*(.*)\s*$</string>
+    </entry>
+    <entry>
+      <string>readTimeout</string>
+      <string>10</string>
+    </entry>
+    <entry>
+      <string>connectTimeout</string>
+      <string>5</string>
+    </entry>
+  </mapperParameters>
+  <allowMapperKeysAutoSync>false</allowMapperKeysAutoSync>
+</authKeyAuthentication>
